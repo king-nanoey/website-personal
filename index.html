@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio | Yunan Eska Rizqi</title>
+  <style>
+    :root {
+      --bg: #0b1220;
+      --panel: #121d31;
+      --text: #eef4ff;
+      --muted: #aab8cf;
+      --accent: #55d6be;
+      --accent2: #7aa7ff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: radial-gradient(circle at top right, #1a3150 0, var(--bg) 42%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      position: sticky; top: 0; z-index: 5;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 16px 8%; background: rgba(11,18,32,.88);
+      backdrop-filter: blur(12px); border-bottom: 1px solid #263650;
+    }
+    .brand { font-weight: 800; letter-spacing: 1px; color: var(--accent); }
+    nav a { color: var(--muted); text-decoration: none; margin-left: 22px; font-size: 14px; }
+    nav a:hover { color: var(--accent); }
+    main { width: min(1050px, 88%); margin: auto; }
+    .hero {
+      min-height: 78vh; display: grid; align-content: center;
+      grid-template-columns: 1.5fr .8fr; gap: 45px; padding: 70px 0;
+    }
+    .eyebrow { color: var(--accent); font-weight: bold; letter-spacing: 2px; text-transform: uppercase; font-size: 13px; }
+    h1 { font-size: clamp(38px, 6vw, 68px); line-height: 1.08; margin: 14px 0; }
+    h1 span { color: var(--accent); }
+    .lead { color: var(--muted); max-width: 600px; font-size: 17px; }
+    .button {
+      display: inline-block; margin-top: 18px; padding: 12px 21px;
+      background: var(--accent); color: #07131c; border-radius: 9px;
+      text-decoration: none; font-weight: bold;
+    }
+    .profile-card {
+      align-self: center; padding: 28px; border: 1px solid #2b405e;
+      border-radius: 22px; background: linear-gradient(145deg, #172740, #101a2c);
+      box-shadow: 0 20px 55px #0005; text-align: center;
+    }
+    .avatar {
+      width: 180px; height: 180px; margin: 0 auto 18px;
+      border-radius: 50%; overflow: hidden;
+      border: 4px solid var(--accent);
+      box-shadow: 0 0 25px #55d6be44;
+    }
+    .avatar img {
+      display: block; width: 100%; height: 100%;
+      object-fit: cover; object-position: center 25%;
+    }
+    .profile-card p { color: var(--muted); margin: 5px 0; }
+    section { padding: 65px 0; }
+    .section-title { font-size: 30px; margin: 0 0 10px; }
+    .section-subtitle { color: var(--muted); margin: 0 0 28px; }
+    .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .info {
+      padding: 23px; border-radius: 15px; background: var(--panel);
+      border: 1px solid #263650;
+    }
+    .info small { color: var(--accent); text-transform: uppercase; letter-spacing: 1px; }
+    .info h3 { margin: 8px 0 3px; font-size: 20px; }
+    .info p { margin: 0; color: var(--muted); }
+    .quote {
+      padding: 28px; border-left: 4px solid var(--accent);
+      background: #121d31; border-radius: 0 14px 14px 0;
+      color: var(--muted); font-size: 18px;
+    }
+    footer { text-align: center; padding: 28px 10px; color: var(--muted); border-top: 1px solid #263650; }
+    /* RESPONSIVE UNTUK HP */
+@media (max-width: 700px) {
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 15px 5%;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0;
+        font-size: 13px;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    .hero {
+        min-height: auto;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 55px 0;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .lead {
+        font-size: 15px;
+    }
+
+    .profile-card {
+        width: 100%;
+        max-width: 100%;
+        padding: 25px 15px;
+    }
+
+    .avatar {
+        width: 150px;
+        height: 150px;
+    }
+
+    section {
+        padding: 45px 0;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .info {
+        padding: 20px;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">TENTANG GUA</div>
+    <nav>
+      <a href="#beranda">Beranda</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#profil">Profil</a>
+      <a href="#impian">Impian</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="beranda">
+      <div>
+        <div class="eyebrow">Yoo WELCOME BACK!!</div>
+        <h1>SAYA <span>KING YUNAN ESKA RIZQI</span></h1>
+        <p class="lead">
+          Saya Adalah Mahasiswa Program Studi Informatika Semester 3 yang sedang belajar hal baru,
+          mengembangkan kemampuan, dan mencoba berbagai pengalaman.
+          Ini adalah website pribadi saya.
+        </p>
+        <a class="button" href="#tentang">Kenalin Gua</a>
+      </div>
+
+      <div class="profile-card">
+        <div class="avatar">
+          <img src="1.jpeg" alt="Foto Yunan Eska Rizqi">
+        </div>
+        <h2>KING YUNAN ESKA RIZQI</h2>
+        <p>Mahasiswa Informatika</p>
+      </div>
+    </section>
+
+    <section id="tentang">
+      <h2 class="section-title">Tentang Saya</h2>
+      <p class="section-subtitle">Sedikit cerita tentang diri saya.</p>
+      <div class="quote">
+        Saya adalah Mahasiswa Informatika yang sebenarnya tidak tertarik ke dalam dunia Web Devolopment tetapi karena ini adalah
+        tugas dari dosen saya saya harus mengerjakannya, Jujur saya lebih tertarik ke dunia Cyber Security
+      </div>
+    </section>
+
+    <section id="profil">
+      <h2 class="section-title">Profil Pribadi</h2>
+      <p class="section-subtitle">Informasi singkat mengenai diri saya.</p>
+      <div class="grid">
+        <div class="info">
+          <small>Nama Lengkap</small>
+          <h3>Yunan Eska Rizqi</h3>
+        </div>
+        <div class="info">
+          <small>Nomor Induk Mahasiswa</small>
+          <h3>255211020</h3>
+        </div>
+        <div class="info">
+          <small>Program Studi</small>
+          <h3>Informatika</h3>
+        </div>
+        <div class="info">
+          <small>Hobi</small>
+          <h3>Main Game Mobile Legend, Main PS, Mancing, Main Bola</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="impian">
+      <h2 class="section-title">Cita-Cita &amp; Tujuan</h2>
+      <p class="section-subtitle">Hal yang ingin saya capai di masa depan.</p>
+      <div class="info">
+        <small>Cita-Cita</small>
+        <h3>CITA-CITA SAYA</h3>
+        <p>
+          Saya ingin jadi pribadi yang baik berguna bagi orang sekitar, ingin sukses dunia dan akhirat
+          dan cita cita yang selalu saya inginkan yaitu saya ingin membantu orang lain ketika sedang susah
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Yunan Eska Rizqi · Website Portofolio Pribadi
+  </footer>
+</body>
+</html>
